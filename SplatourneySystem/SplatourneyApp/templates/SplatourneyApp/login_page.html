@@ -1,0 +1,89 @@
+{% extends 'SplatourneyApp/base.html' %}
+{% block title %} <h1>LOG-IN</h1> {% endblock %}
+
+{% block content %}
+
+<style>
+   
+    .contained {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box; /* Ensure padding is included in height calculation */
+    }
+    .btn-custom {
+        width: 400px;
+        height: 52px;
+        font-size: 1.2em;
+        margin: 10px;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-family: 'Luckiest Guy', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;
+        color:white;
+    }
+
+    .player {
+        background-color: #ef216c;
+    }
+    .team {
+        background-color: #008CC6;
+    }
+    p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: center;
+        color:white;
+        
+    }
+</style>
+<div class="contained">
+    <!-- <p>CHOOSE LOG-IN TYPE</p>
+    <a href="{% url 'login_moderator' %}" class="btn btn-custom player">MODERATOR</a>
+    <a href="{% url 'tournaments_screen' %}" class="btn btn-custom team">PLAYER</a> -->
+    <p> VIEW FRONT-END SCREENS </p>
+    <div class="row">
+        <div class="col-md-6 d-flex flex-column align-items-center">
+            <p> FORMS </p>
+            <a href="{% url 'login_moderator' %}" class="btn btn-custom team">Moderator Log in</a>
+            <a href="{% url 'edit_schedule' %}" class="btn btn-custom team">Edit Schedule</a>
+            <a href="{% url 'player_registration' %}" class="btn btn-custom team">Player Registration</a>
+            <a href="{% url 'team_registration' %}" class="btn btn-custom team">Team Registration</a>
+            <a href="{% url 'edit_player_registration' %}" class="btn btn-custom team">Edit Player Registration</a>
+            <a href="{% url 'edit_team_registration' %}" class="btn btn-custom team">Edit Team Registration</a>
+            <a href="{% url 'create_tournament' %}" class="btn btn-custom team">Create Tournament</a>
+            <a href="{% url 'create_team' %}" class="btn btn-custom team">Create Team</a>
+            <a href="{% url 'create_moderator' %}" class="btn btn-custom team">Create Moderator</a>
+
+        </div>
+        <div class="col-md-6 d-flex flex-column align-items-center">
+            <p> DISPLAYS </p>
+            <a href="{% url 'view_bracket' %}" class="btn btn-custom player">Game Bracket Display</a>
+            <a href="{% url 'view_registrations' %}" class="btn btn-custom player">Registrations</a>
+            <a href="{% url 'display_schedule' %}" class="btn btn-custom player">Schedule Display</a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+  
+
+{% endblock %}
+  
