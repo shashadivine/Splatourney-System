@@ -17,5 +17,5 @@ Schedule Viewing and Display
 Base Template for all the Forms
 Base Template of the overall system
 
-The system was created with HTML, CSS, Python, JavaScript, Django, and Bootstrap.
+The system was created with HTML, CSS, Python, MySQL, JavaScript, Django, and Bootstrap.
 Thank you!
